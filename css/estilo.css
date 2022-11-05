@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); 
+
+/*header*/
+
+.encabezado{
+    background-image: url("../img/coach.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40vh;
+    width: 100%;
+    position:relative;
+    grid-area: header;
+}
+
+/*GRID*/
+.coachingA{
+    grid-area: coachingA;
+}
+
+.coachingB {
+    grid-area: coachingB;
+}
+
+.coachingC {
+    grid-area: coachingC;
+}
+
+.container { 
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "coachingA  coachingB  coachingC"
+    "coachingA  coachingB  coachingC"
+    "footer footer footer";
+}
+
+/*Servicios*/
+section{
+    margin: 1 rem;
+    padding: 0.5 rem;
+    height: 50 rem;
+
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 10px 2px 5px 0px rgba(223, 181, 243, 0.75);
+}
+
+/*Tamaños de imagenes*/
+section img{
+   width: 40rem; 
+   border-radius:4px;
+   /*Border radius redondea bordes del contenedor*/
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(230, 223, 223);
+    margin-left: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+
+}
+h1{
+animation-name: texto;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+
+h2 {
+    text-align: center;
+    color:blueviolet;
+}
+
+header {
+    background-color: violet;
+    text-align: justify;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* MAIN */
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.parrafo {
+    text-align: center;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* IMAGEN */
+
+img {
+    width: 300px;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+
+/* FOOTER */
+
+footer {
+    background-color: bis;
+}
+
+form {
+    margin: 0 auto; 
+    width: 300px;  
+    background-color: beige;
+    padding: 2px; 
+    border-radius: 10px;
+}
+/*RESPONSIVE*/
+
+section {
+    text-align: center;
+}
+section img {
+    width: 300px;
+}
+
+.instagram {
+    height: 28px;
+    width: 28px;
+
+}
+
+.linkedin{
+    height: 28px;
+    width: 28px;
+}
+
+button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #ab4493; 
+    border-color: #ab4493; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+
+  button .formP{
+    color: rgb(223, 203, 203); 
+  }
+
+  .container {
+    margin-top: 150px;
+    height: 100vh;
+  }
+  
+  .headerFondo {
+    background: linear-gradient(to right, #f17ff1, #7e53ce);
+  }
+  
+  
+  .box {
+      display: inline-block;
+      border-radius: 10px;
+      width: 600px;
+      height:200px;
+      background: linear-gradient(to left, #4cb8c4, #3cd3ad);
+  }
+
+  /* nav----------------------------------------------- */
+
+  .container-fluid{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    
+  }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.brand-title {
+    font-family: var(--ff-sec);
+    font-size: 4rem;
+    color: white;
+}
+
+.brand-title a:visited {
+    color: rgb(107, 35, 175);
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: 2rem;
+    letter-spacing: 1px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    transition: 0.5s;
+}
+
+.nav-links li a:hover {
+    color: rgb(74, 23, 104);
+    transform: scale(1.5) translateY(-5px);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.03rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 862px) { 
+
+}
+
+/*TABLETA*/
+@media (min-width: 700px) and (max-width:1100px){
+    
+
+    .container{
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "coachingA coachingB"
+         "coachingC"
+        "footer footer footer";
+    }
+    section img{
+         width: 300px;
+    }
+} 
+
+/*VISTA MOVIL*/
+@media (max-width: 699px){
+    .container{
+        grid-template-areas: 
+        "header"
+        "nav"
+        "coachingA"
+        "coachingB"
+        "coachingC"
+        "footer";
+    }
+
+    /*Formulario*/
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background:rgba(223, 181, 243, 0.75)(to right, #f17ff1, #7e53ce);
+    }
+    
+    .contenedor{
+        background-color: #990e92;
+        width: 400px;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        box-shadow: 7px 13px 37px rgb(131, 18, 131);
+    }
+    
+    .contenedor h1{
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .control{
+        width: 100%;
+        background-color: #a71fc2;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        border: 1px solid #e1e3e7;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+    
+    .boton{
+        width: 100%;
+        height: 45px;
+        margin-top: 15px;
+        border-radius: 4px;
+        border:none;
+        color: white;
+        text-transform: uppercase;
+        background: linear-gradient(to left top, #a70099,#720935);
+        font-size: 20px;
+    }
+    
+    .boton:hover{
+        cursor:pointer;
+        transform: translateY(-3px);
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    }
+    
+    .boton:active{
+        transform:translateY(3px);
+    }
+    
+    .control:focus{
+        height: 60px;
+    }
+    
+}
+
